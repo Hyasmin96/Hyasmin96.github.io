@@ -1,1 +1,189 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .info div {
+            flex: 1;
+            padding: 10px;
+            margin: 0 5px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            object-position: top;
+        }
+
+        @media screen and (max-width: 600px) {
+            .info {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Currículum</h1>
+    </header>
+
+    <section>
+        <div style="text-align: center;">
+            <img class="profile-pic" src="/Actividad5/Perfil.jpg" alt="Foto de perfil">
+        </div>
+    </section>
+
+    <section>
+        <h2>Datos Personales</h2>
+        <div class="info">
+            <div>
+                <h3>Nombre</h3>
+                <p>Heidy Cardenas</p>
+            </div>
+            <div>
+                <h3>Correo Electrónico</h3>
+                <p>25000680@galileo.edu</p>
+            </div>
+            <div>
+                <h3>Teléfono</h3>
+                <p>(123) 456-7890</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experiencia Laboral</h2>
+        <div>
+            <h3>Procesador de transaciones</h3>
+            <p>Conduent (Truist Bank) - Guatemala, Guatemala | Trabajo Remoto para USA | Sept 2024 - Presente</p>
+            <ul>
+                <li>Encargado de procesar transacciones bancarias, verificando la precisión de los datos, asegurando el cumplimiento de procedimientos y resolviendo posibles inconsistencias para garantizar operaciones seguras y eficientes.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Manual Testing</h3>
+            <p>Plataforma Utest - Guatemala, Guatemala | Trabajo Remoto para USA | Abr 2024 - Dic 2024</p>
+            <ul>
+                <li>Experiencia freelance y en modalidad de trabajo remoto en pruebas de software a través de uTest, desarrollando proyectos desde casa y adaptándome a diferentes tecnologías y requerimientos de clientes internacionales.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Representante de Servicio al Cliente</h3>
+            <p>Everise (Humana) - Guatemala, Guatemala | Trabajo Remoto para USA | Nov 2023 - Mar 2024</p>
+            <ul>
+                <li>Brindar orientación experta a los pacientes, ayudarles a navegar por el sistema de salud, programar citas,
+                    gestionar tratamientos y asegurar la coordinación entre los diferentes proveedores de atención médica.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Analista de Crédito</h3>
+            <p>Genpact (Citi Bank) - Guatemala, Guatemala | Trabajo Remoto para USA | Abr 2021 - Nov 2023</p>
+            <ul>
+                <li>Verificar y validar datos en aplicaciones de tarjetas de crédito, revisar la información financiera, la identidad del solicitante y evaluar riesgos. Asegurar la precisión y el cumplimiento de las políticas de crédito para aprobar o denegar solicitudes.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Educación</h2>
+        <div>
+            <h3>Técnico en desarrollo de software</h3>
+            <p>Universidad Galileo - Guatemala, Guatemala | Ene 2025 - Presente</p>
+            <p>Actualmente en curso.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Habilidades</h2>
+        <div>
+            <ul>
+                <li>Pruebas Manuales</li>
+                <li>Detección e Identificación de errores</li>
+                <li>Documentación de Errores</li>
+                <li>Gestión Efectiva del Tiempo</li>
+                <li>Análisis de Datos</li>
+                <li>Scrum</li>
+                <li>Automatización Básica de Pruebas</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Herramientas</h2>
+        <div>
+            <h3>Herrmientas de Desarrollo y Pruebas</h3>
+            <ul>
+                <li>Visual Studio Code, GitHub, Jira.</li>
+            </ul>
+            <h3>Lenguajes y Técnologías</h3>
+            <ul>
+                <li>JavaScript, Node.js, SQL (MySQL y SQL Server).</li>
+            </ul>
+            <h3>Metodologías y Prácticas</h3>
+            <ul>
+                <li>Pruebas Manuales, Scrum.</li>
+            </ul>
+            <h3>Competencias Específicas</h3>
+            <ul>
+                <li>Identificación y Documentación de Errores</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Idiomas</h2>
+        <div>
+            <ul>
+                <li>Español (Nativo)</li>
+                <li>Inglés (B2)</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
+
