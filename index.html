@@ -1,189 +1,234 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Currículum</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio de Heidy Cardenas, estudiante de Desarrollo de Software y Full Stack Developer en formación."
+    />
+    <meta name="theme-color" content="#08111f" />
+    <title>Heidy Cardenas | Desarrolladora de Software Junior</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Ir al contenido</a>
 
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        .info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        .info div {
-            flex: 1;
-            padding: 10px;
-            margin: 0 5px;
-            background-color: #f0f0f0;
-            border-radius: 6px;
-        }
-
-        .profile-pic {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 20px;
-            object-position: top;
-        }
-
-        @media screen and (max-width: 600px) {
-            .info {
-                flex-direction: column;
-            }
-        }
-
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Mi Currículum</h1>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Inicio de Heidy Cardenas">HC<span>.</span></a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Abrir menú</span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#tecnologias">Tecnologías</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#experiencia">Experiencia</a>
+          <a class="nav-cta" href="#contacto">Contacto</a>
+        </div>
+      </nav>
     </header>
 
-    <section>
-        <div style="text-align: center;">
-            <img class="profile-pic" src="https://github.com/Hyasmin96/Hyasmin96.github.io/blob/main/Perfil.jpg?raw=true" alt="Foto de perfil">
+    <main id="contenido">
+      <section class="hero container" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Desarrollo de software · Guatemala</p>
+          <h1>Hola, soy <span>Heidy Cardenas</span></h1>
+          <p class="hero-role">Desarrolladora de Software Junior</p>
+          <p class="hero-summary">
+            Estudiante de Desarrollo de Software con experiencia práctica en aplicaciones web, APIs REST y bases de
+            datos. Mi experiencia en QA fortalece mi atención al detalle y mi enfoque en construir software confiable.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#proyectos">Ver proyectos</a>
+            <a class="button secondary" href="mailto:hc3826@gmail.com">Contactarme</a>
+          </div>
+          <div class="social-links" aria-label="Perfiles profesionales">
+            <a href="https://github.com/Hyasmin96" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+            <a href="https://www.linkedin.com/in/heidy-cardenas" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          </div>
         </div>
-    </section>
+        <div class="hero-mark" aria-hidden="true">
+          <div class="code-window">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <pre><code><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"Heidy"</span>,
+  focus: [
+    <span class="code-green">"Frontend"</span>,
+    <span class="code-green">"Backend"</span>,
+    <span class="code-green">"Quality"</span>
+  ],
+  learning: <span class="code-blue">true</span>
+};</code></pre>
+          </div>
+        </div>
+      </section>
 
-    <section>
-        <h2>Datos Personales</h2>
-        <div class="info">
-            <div>
-                <h3>Nombre</h3>
-                <p>Heidy Cardenas</p>
+      <section class="section container" id="sobre-mi">
+        <div class="section-heading">
+          <p class="section-number">01</p>
+          <h2>Sobre mí</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-lead">
+            Actualmente curso el Técnico en Desarrollo de Software en Universidad Galileo y continúo desarrollando
+            mis habilidades como Full Stack Developer.
+          </p>
+          <div class="about-copy">
+            <p>
+              He trabajado con Java, JavaScript, React, Node.js, Express y diferentes bases de datos en proyectos
+              académicos y personales. Disfruto convertir requerimientos en soluciones claras, funcionales y fáciles
+              de mantener.
+            </p>
+            <p>
+              Mi trayectoria en validación de información y pruebas de software aporta pensamiento analítico,
+              documentación precisa y una perspectiva de calidad durante el desarrollo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="tecnologias">
+        <div class="section-heading">
+          <p class="section-number">02</p>
+          <h2>Tecnologías</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <p class="skill-index">A</p>
+            <h3>Lenguajes</h3>
+            <p>Java · JavaScript · SQL · HTML · CSS</p>
+          </article>
+          <article class="skill-card">
+            <p class="skill-index">B</p>
+            <h3>Frontend</h3>
+            <p>React · Redux Toolkit · Diseño responsive</p>
+          </article>
+          <article class="skill-card">
+            <p class="skill-index">C</p>
+            <h3>Backend</h3>
+            <p>Node.js · Express · APIs REST · CRUD</p>
+          </article>
+          <article class="skill-card">
+            <p class="skill-index">D</p>
+            <h3>Bases de datos</h3>
+            <p>MySQL · SQL Server · SQLite · MongoDB</p>
+          </article>
+          <article class="skill-card wide">
+            <p class="skill-index">E</p>
+            <h3>Herramientas y calidad</h3>
+            <p>Git · GitHub · Docker · Postman · SonarCloud · JMeter · Jira</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="proyectos">
+        <div class="section-heading">
+          <p class="section-number">03</p>
+          <h2>Proyectos seleccionados</h2>
+        </div>
+        <div class="projects">
+          <article class="project-card featured">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <p class="project-type">Backend · API REST</p>
+              <h3>Todo API</h3>
+              <p>
+                API para administrar tareas mediante operaciones CRUD, validaciones de entrada y respuestas HTTP
+                controladas. Incluye análisis de calidad, contenedorización y pruebas funcionales y de carga.
+              </p>
+              <ul class="project-tags" aria-label="Tecnologías del proyecto">
+                <li>Node.js</li><li>Express</li><li>Docker</li><li>SonarCloud</li><li>JMeter</li>
+              </ul>
+              <a class="text-link" href="https://github.com/Hyasmin96/todo-api" target="_blank" rel="noreferrer">
+                Ver código en GitHub <span>↗</span>
+              </a>
             </div>
-            <div>
-                <h3>Correo Electrónico</h3>
-                <p>25000680@galileo.edu</p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <p class="project-type">Full Stack · Aplicación web</p>
+              <h3>Habit Tracker</h3>
+              <p>
+                Aplicación con frontend y backend separados para registrar y consultar hábitos, con manejo de estado,
+                rutas y persistencia de datos.
+              </p>
+              <ul class="project-tags" aria-label="Tecnologías del proyecto">
+                <li>React</li><li>Redux Toolkit</li><li>Node.js</li><li>Express</li><li>MongoDB</li>
+              </ul>
+              <div class="project-links">
+                <a class="text-link" href="https://github.com/Hyasmin96/habits-tracker-frontend" target="_blank" rel="noreferrer">Frontend <span>↗</span></a>
+                <a class="text-link" href="https://github.com/Hyasmin96/habits-tracker-backend" target="_blank" rel="noreferrer">Backend <span>↗</span></a>
+              </div>
             </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="experiencia">
+        <div class="section-heading">
+          <p class="section-number">04</p>
+          <h2>Experiencia</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <p class="timeline-date">2024 — Actualidad</p>
             <div>
-                <h3>Teléfono</h3>
-                <p>(123) 456-7890</p>
+              <h3>Analista de Verificación de Transacciones</h3>
+              <p class="company">Conduent · Trabajo remoto para Estados Unidos</p>
+              <p>Validación de información, identificación de inconsistencias y documentación precisa de hallazgos.</p>
             </div>
+          </article>
+          <article class="timeline-item">
+            <p class="timeline-date">2024</p>
+            <div>
+              <h3>Manual Tester</h3>
+              <p class="company">uTest · Trabajo freelance remoto</p>
+              <p>Pruebas funcionales, exploratorias y de regresión en aplicaciones web y móviles.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <p class="timeline-date">2021 — 2023</p>
+            <div>
+              <h3>Analista de Crédito</h3>
+              <p class="company">Genpact para Citi Bank · Trabajo remoto para Estados Unidos</p>
+              <p>Verificación de datos, detección de inconsistencias y aplicación de reglas de negocio.</p>
+            </div>
+          </article>
         </div>
-    </section>
+      </section>
 
-    <section>
-        <h2>Experiencia Laboral</h2>
-        <div>
-            <h3>Procesador de transaciones</h3>
-            <p>Conduent (Truist Bank) - Guatemala, Guatemala | Trabajo Remoto para USA | Sept 2024 - Presente</p>
-            <ul>
-                <li>Encargado de procesar transacciones bancarias, verificando la precisión de los datos, asegurando el cumplimiento de procedimientos y resolviendo posibles inconsistencias para garantizar operaciones seguras y eficientes.</li>
-            </ul>
+      <section class="contact section" id="contacto">
+        <div class="container contact-inner">
+          <p class="section-number">05</p>
+          <h2>Conversemos</h2>
+          <p>
+            Estoy abierta a oportunidades como Desarrolladora de Software Junior y a proyectos donde pueda seguir
+            aprendiendo, aportando y construyendo soluciones confiables.
+          </p>
+          <a class="button primary" href="mailto:hc3826@gmail.com">hc3826@gmail.com</a>
         </div>
+      </section>
+    </main>
 
-        <div>
-            <h3>Manual Testing</h3>
-            <p>Plataforma Utest - Guatemala, Guatemala | Trabajo Remoto para USA | Abr 2024 - Dic 2024</p>
-            <ul>
-                <li>Experiencia freelance y en modalidad de trabajo remoto en pruebas de software a través de uTest, desarrollando proyectos desde casa y adaptándome a diferentes tecnologías y requerimientos de clientes internacionales.</li>
-            </ul>
-        </div>
+    <footer>
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Heidy Cardenas</p>
+        <p>Diseñado y desarrollado con atención al detalle.</p>
+      </div>
+    </footer>
 
-        <div>
-            <h3>Representante de Servicio al Cliente</h3>
-            <p>Everise (Humana) - Guatemala, Guatemala | Trabajo Remoto para USA | Nov 2023 - Mar 2024</p>
-            <ul>
-                <li>Brindar orientación experta a los pacientes, ayudarles a navegar por el sistema de salud, programar citas,
-                    gestionar tratamientos y asegurar la coordinación entre los diferentes proveedores de atención médica.</li>
-            </ul>
-        </div>
-
-        <div>
-            <h3>Analista de Crédito</h3>
-            <p>Genpact (Citi Bank) - Guatemala, Guatemala | Trabajo Remoto para USA | Abr 2021 - Nov 2023</p>
-            <ul>
-                <li>Verificar y validar datos en aplicaciones de tarjetas de crédito, revisar la información financiera, la identidad del solicitante y evaluar riesgos. Asegurar la precisión y el cumplimiento de las políticas de crédito para aprobar o denegar solicitudes.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Educación</h2>
-        <div>
-            <h3>Técnico en desarrollo de software</h3>
-            <p>Universidad Galileo - Guatemala, Guatemala | Ene 2025 - Presente</p>
-            <p>Actualmente en curso.</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Habilidades</h2>
-        <div>
-            <ul>
-                <li>Pruebas Manuales</li>
-                <li>Detección e Identificación de errores</li>
-                <li>Documentación de Errores</li>
-                <li>Gestión Efectiva del Tiempo</li>
-                <li>Análisis de Datos</li>
-                <li>Scrum</li>
-                <li>Automatización Básica de Pruebas</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Herramientas</h2>
-        <div>
-            <h3>Herrmientas de Desarrollo y Pruebas</h3>
-            <ul>
-                <li>Visual Studio Code, GitHub, Jira.</li>
-            </ul>
-            <h3>Lenguajes y Técnologías</h3>
-            <ul>
-                <li>JavaScript, Node.js, SQL (MySQL y SQL Server).</li>
-            </ul>
-            <h3>Metodologías y Prácticas</h3>
-            <ul>
-                <li>Pruebas Manuales, Scrum.</li>
-            </ul>
-            <h3>Competencias Específicas</h3>
-            <ul>
-                <li>Identificación y Documentación de Errores</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Idiomas</h2>
-        <div>
-            <ul>
-                <li>Español (Nativo)</li>
-                <li>Inglés (B2)</li>
-            </ul>
-        </div>
-    </section>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
-
